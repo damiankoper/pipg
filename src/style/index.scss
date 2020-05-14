@@ -1,0 +1,9 @@
+@import "~reset-css/sass/reset";
+
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: gray;
+}
