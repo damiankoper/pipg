@@ -1,0 +1,17 @@
+{
+	"meta": {
+		"image": "b1_idle.png",
+		"size": {"w":549,"h":1147},
+		"scale": "1"
+	},
+	"frames": {
+		"b1_01.png":
+		{
+			"frame": {"x":0,"y":0,"w":549,"h":1147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":549,"h":1147},
+			"sourceSize": {"w":549,"h":1147}
+		}
+	}
+}

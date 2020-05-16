@@ -3,9 +3,10 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "module": "es6",
-    "target": "es5",
+    "module": "esnext",
+    "target": "esnext",
     "jsx": "react",
+    "lib": ["es5", "dom", "es6"],
     "allowJs": true,
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
@@ -14,5 +15,5 @@
     "typeRoots": ["src"]
   },
   "include": ["src/**/*"],
-  "exclude": [".git", "node_modules"],
+  "exclude": [".git", "node_modules"]
 }

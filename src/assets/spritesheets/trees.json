@@ -1,0 +1,17 @@
+{
+	"meta": {
+		"image": "trees.png",
+		"size": {"w":1310,"h":1522},
+		"scale": "1"
+	},
+	"frames": {
+		"Drzewo_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":1310,"h":1522},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1310,"h":1522},
+			"sourceSize": {"w":1310,"h":1522}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "b1_jump.png",
+		"size": {"w":1859,"h":1259},
+		"scale": "1"
+	},
+	"frames": {
+		"b1_00.png":
+		{
+			"frame": {"x":0,"y":0,"w":934,"h":1259},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":43,"y":98,"w":934,"h":1259},
+			"sourceSize": {"w":1040,"h":1421}
+		},
+		"b1_01.png":
+		{
+			"frame": {"x":934,"y":0,"w":925,"h":1253},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":55,"y":82,"w":925,"h":1253},
+			"sourceSize": {"w":1047,"h":1403}
+		}
+	}
+}

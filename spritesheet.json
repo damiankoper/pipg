@@ -1,0 +1,17 @@
+{
+	"meta": {
+		"image": "spritesheet.png",
+		"size": {"w":2620,"h":3044},
+		"scale": "1"
+	},
+	"frames": {
+		"Drzewo_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":2620,"h":3044},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2620,"h":3044},
+			"sourceSize": {"w":2620,"h":3044}
+		}
+	}
+}
