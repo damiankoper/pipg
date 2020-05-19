@@ -20,7 +20,6 @@ export default class Sokrates extends AnimatedSprite {
   private stableCollTimeout?: number;
 
   readonly runSpeed: number;
-  
 
   constructor(position: Vector, scale: number) {
     const runSprite = AnimatedSprite.createSprite(
@@ -37,7 +36,7 @@ export default class Sokrates extends AnimatedSprite {
     Body.setInertia(this.body, Infinity);
     this.state = CharacterState.Idle;
     this.isInTheAir = false;
-    this.runSpeed = 6
+    this.runSpeed = 6;
 
     this.runSprite = runSprite;
     this.idleSprite = idleSprite;
@@ -66,14 +65,23 @@ export default class Sokrates extends AnimatedSprite {
       case CharacterState.Idle:
         Body.setVelocity(
           this.body,
-          Vector.create(Math.min(this.body.velocity.x, this.runSpeed), this.body.velocity.y)
+          Vector.create(
+            Math.min(this.body.velocity.x, this.runSpeed),
+            this.body.velocity.y
+          )
         );
         break;
       case CharacterState.RunningRight:
-        Body.setVelocity(this.body, Vector.create(this.runSpeed, this.body.velocity.y));
+        Body.setVelocity(
+          this.body,
+          Vector.create(this.runSpeed, this.body.velocity.y)
+        );
         break;
       case CharacterState.RunningLeft:
-        Body.setVelocity(this.body, Vector.create(-this.runSpeed, this.body.velocity.y));
+        Body.setVelocity(
+          this.body,
+          Vector.create(-this.runSpeed, this.body.velocity.y)
+        );
         break;
     }
     this.updateDirection();
@@ -128,7 +136,14 @@ export default class Sokrates extends AnimatedSprite {
     });
   }
 
+  onCollisionActive(body: Body) {
+    this.setInTheAir(body);
+  }
   onCollisionStart(body: Body) {
+    this.setInTheAir(body);
+  }
+
+  private setInTheAir(body: Body) {
     if (
       Math.abs(this.body.bounds.max.y - body.bounds.max.y) > 10 &&
       body.isSensor == false
@@ -147,7 +162,7 @@ export default class Sokrates extends AnimatedSprite {
       this.stableCollTimeout = setTimeout(() => {
         this.isInTheAir = true;
         this.changeSprite();
-      }, 10);
+      }, 50);
     }
   }
 

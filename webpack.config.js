@@ -18,7 +18,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Sokrates",
     }),
-    new CopyWebpackPlugin([{ from: "./src/assets", to: "assets" }]),
+    new CopyWebpackPlugin([{ from: "./src/assets/spritesheets", to: "assets/spritesheets" }]),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],

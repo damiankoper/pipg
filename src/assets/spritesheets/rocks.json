@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "rocks.png",
+		"size": {"w":1728,"h":1020},
+		"scale": "1"
+	},
+	"frames": {
+		"kam_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":620,"h":460},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":72,"y":171,"w":620,"h":460},
+			"sourceSize": {"w":874,"h":659}
+		},
+		"kam_3.png":
+		{
+			"frame": {"x":620,"y":0,"w":591,"h":427},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":112,"y":57,"w":591,"h":427},
+			"sourceSize": {"w":745,"h":517}
+		},
+		"kam_2.png":
+		{
+			"frame": {"x":0,"y":460,"w":473,"h":560},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":30,"y":51,"w":473,"h":560},
+			"sourceSize": {"w":576,"h":638}
+		},
+		"kam_5.png":
+		{
+			"frame": {"x":473,"y":460,"w":416,"h":537},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":88,"y":20,"w":416,"h":537},
+			"sourceSize": {"w":538,"h":674}
+		},
+		"kam_4.png":
+		{
+			"frame": {"x":1211,"y":0,"w":517,"h":379},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":18,"y":51,"w":517,"h":379},
+			"sourceSize": {"w":659,"h":443}
+		},
+		"kam_6.png":
+		{
+			"frame": {"x":1211,"y":379,"w":430,"h":354},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":20,"y":30,"w":430,"h":354},
+			"sourceSize": {"w":505,"h":476}
+		}
+	}
+}

@@ -1,17 +1,81 @@
 {
 	"meta": {
 		"image": "trees.png",
-		"size": {"w":1310,"h":1522},
+		"size": {"w":6173,"h":5666},
 		"scale": "1"
 	},
 	"frames": {
-		"Drzewo_3.png":
+		"Drzewo_5_scale.png":
 		{
-			"frame": {"x":0,"y":0,"w":1310,"h":1522},
+			"frame": {"x":0,"y":0,"w":2764,"h":1684},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":28,"y":164,"w":2764,"h":1684},
+			"sourceSize": {"w":2846,"h":2000}
+		},
+		"Drzewo_1_scale.png":
+		{
+			"frame": {"x":0,"y":1684,"w":1874,"h":2000},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":1310,"h":1522},
-			"sourceSize": {"w":1310,"h":1522}
+			"spriteSourceSize": {"x":0,"y":0,"w":1874,"h":2000},
+			"sourceSize": {"w":1874,"h":2000}
+		},
+		"Drzewo_3_scale.png":
+		{
+			"frame": {"x":2764,"y":0,"w":1721,"h":2000},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1721,"h":2000},
+			"sourceSize": {"w":1721,"h":2000}
+		},
+		"Drzewo_2_scale.png":
+		{
+			"frame": {"x":4485,"y":0,"w":1688,"h":2000},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1688,"h":2000},
+			"sourceSize": {"w":1688,"h":2000}
+		},
+		"Drzewo_4_scale.png":
+		{
+			"frame": {"x":0,"y":3684,"w":1818,"h":1982},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":10,"y":13,"w":1818,"h":1982},
+			"sourceSize": {"w":1847,"h":2000}
+		},
+		"Drzewo_6_scale.png":
+		{
+			"frame": {"x":1818,"y":3684,"w":1264,"h":1949},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":32,"y":39,"w":1264,"h":1949},
+			"sourceSize": {"w":1329,"h":2000}
+		},
+		"Drzewo_7_scale.png":
+		{
+			"frame": {"x":3082,"y":3684,"w":1605,"h":1942},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":8,"y":16,"w":1605,"h":1942},
+			"sourceSize": {"w":1642,"h":2000}
+		},
+		"Drzewo_9_scale.png":
+		{
+			"frame": {"x":1874,"y":1684,"w":817,"h":1918},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":24,"y":35,"w":817,"h":1918},
+			"sourceSize": {"w":870,"h":2000}
+		},
+		"Drzewo_8_scale.png":
+		{
+			"frame": {"x":4687,"y":3684,"w":895,"h":1863},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":88,"y":69,"w":895,"h":1863},
+			"sourceSize": {"w":1012,"h":2000}
 		}
 	}
 }

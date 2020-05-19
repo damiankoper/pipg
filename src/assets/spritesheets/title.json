@@ -1,0 +1,17 @@
+{
+	"meta": {
+		"image": "title.png",
+		"size": {"w":631,"h":242},
+		"scale": "1"
+	},
+	"frames": {
+		"napis.png":
+		{
+			"frame": {"x":0,"y":0,"w":631,"h":242},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":190,"y":130,"w":631,"h":242},
+			"sourceSize": {"w":1000,"h":500}
+		}
+	}
+}

@@ -1,7 +1,8 @@
 import { Vector, World, Bodies, Body, Engine } from "matter-js";
 import * as PIXI from "pixi.js";
+import SceneObject from "../../scene/base/SceneObject";
 
-export default abstract class Sprite {
+export default abstract class Sprite implements SceneObject {
   public sprite: PIXI.Sprite;
   public body: Body;
 

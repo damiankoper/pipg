@@ -1,7 +1,8 @@
 import { Vector, World, Bodies, Body, Engine, Events, IPair } from "matter-js";
 import * as PIXI from "pixi.js";
+import SceneObject from "../../scene/base/SceneObject";
 
-export default abstract class AnimatedSprite {
+export default abstract class AnimatedSprite implements SceneObject {
   public mainSprite: PIXI.AnimatedSprite;
   public sprites: PIXI.AnimatedSprite[];
   public body: Body;
@@ -30,10 +31,7 @@ export default abstract class AnimatedSprite {
     this.sprites.forEach((s) => {
       s.scale = new PIXI.Point(scale, scale);
       s.visible = false;
-      s.pivot.set(
-        this.pixiToMass.x / scale,
-        this.pixiToMass.y / scale
-      );
+      s.pivot.set(this.pixiToMass.x / scale, this.pixiToMass.y / scale);
     });
     this.mainSprite.visible = true;
   }
@@ -52,17 +50,6 @@ export default abstract class AnimatedSprite {
     World.addBody(engine.world, this.body);
     this.update();
 
-    Events.on(engine, "collisionStart", (event) => {
-      const pairs = event.pairs;
-      pairs.forEach((pair) => {
-        if (pair.bodyA == this.body) {
-          this.onCollisionStart(pair.bodyB);
-        } else if (pair.bodyB == this.body) {
-          this.onCollisionStart(pair.bodyA);
-        }
-      });
-    });
-
     Events.on(engine, "collisionEnd", (event) => {
       const pairs = event.pairs;
       pairs.forEach((pair) => {
@@ -70,6 +57,28 @@ export default abstract class AnimatedSprite {
           this.onCollisionEnd(pair.bodyB);
         } else if (pair.bodyB == this.body) {
           this.onCollisionEnd(pair.bodyA);
+        }
+      });
+    });
+
+    Events.on(engine, "collisionActive", (event) => {
+      const pairs = event.pairs;
+      pairs.forEach((pair) => {
+        if (pair.bodyA == this.body) {
+          this.onCollisionActive(pair.bodyB);
+        } else if (pair.bodyB == this.body) {
+          this.onCollisionActive(pair.bodyA);
+        }
+      });
+    });
+
+    Events.on(engine, "collisionStart", (event) => {
+      const pairs = event.pairs;
+      pairs.forEach((pair) => {
+        if (pair.bodyA == this.body) {
+          this.onCollisionStart(pair.bodyB);
+        } else if (pair.bodyB == this.body) {
+          this.onCollisionStart(pair.bodyA);
         }
       });
     });
@@ -93,7 +102,9 @@ export default abstract class AnimatedSprite {
     return new PIXI.AnimatedSprite(frames);
   }
 
-  onCollisionStart(body: Body) {}
+  onCollisionActive(body: Body) {}
 
   onCollisionEnd(body: Body) {}
+
+  onCollisionStart(body: Body) {}
 }
