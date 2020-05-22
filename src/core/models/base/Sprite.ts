@@ -6,25 +6,40 @@ export default abstract class Sprite implements SceneObject {
   public sprite: PIXI.Sprite;
   public body: Body;
 
-  private pixiToMass: Vector;
+  protected pixiToMass: Vector;
 
-  constructor(position: Vector, scale: number, sprite: PIXI.Sprite) {
+  constructor(
+    position: Vector,
+    scale: number,
+    sprite: PIXI.Sprite,
+    points?: Vector[]
+  ) {
     this.sprite = sprite;
     this.sprite.scale = new PIXI.Point(scale, scale);
     this.sprite.calculateBounds();
-    this.body = Bodies.rectangle(
-      position.x,
-      position.y,
-      this.sprite.width,
-      this.sprite.height
-    );
+    if (points) {
+      this.body = Bodies.fromVertices(position.x, position.y, [
+        points.map((v) => {
+          v.x *= scale;
+          v.y *= scale;
+          return v;
+        }),
+      ]);
+    } else {
+      this.body = Bodies.rectangle(
+        position.x,
+        position.y,
+        this.sprite.width,
+        this.sprite.height
+      );
+    }
     this.pixiToMass = Vector.sub(this.body.position, this.body.bounds.min);
     this.sprite.pivot.set(this.pixiToMass.x / scale, this.pixiToMass.y / scale);
   }
 
-  setup(container: PIXI.Container, engine: Engine) {
+  setup(container: PIXI.Container, engine?: Engine) {
     container.addChild(this.sprite);
-    World.addBody(engine.world, this.body);
+    if (engine) World.addBody(engine.world, this.body);
     this.update();
   }
 
