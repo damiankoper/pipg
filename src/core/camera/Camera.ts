@@ -7,9 +7,12 @@ export default class Camera {
   private windowSize = Vector.create(1280, 720);
   private followObject?: AnimatedSprite;
   private followPaddingX = Vector.create(300, 500);
-  private followPaddingY = Vector.create(800, 400);
+  private followPaddingY = Vector.create(800, 300);
   private layers = new Map<number, PIXI.Container>();
 
+  getPosition() {
+    return this.position;
+  }
   setPosition(vector: Vector) {
     this.position = Vector.clone(vector);
     this.followObject = undefined;
@@ -21,6 +24,7 @@ export default class Camera {
 
   follow(object: AnimatedSprite) {
     this.followObject = object;
+    this.position = Vector.mult(object.body.position, -1)
   }
 
   getLayer(distance: number) {
@@ -31,6 +35,7 @@ export default class Camera {
   }
 
   update(deltaTime: number) {
+    if (deltaTime > 2) return;
     if (this.followObject) {
       const position = this.followObject.mainSprite.getGlobalPosition();
       const leftX =
@@ -59,6 +64,7 @@ export default class Camera {
         this.position.y -= bottomX * deltaTime;
       }
     }
+
     this.updateLayers();
   }
 

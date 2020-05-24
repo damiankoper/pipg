@@ -2,3 +2,5 @@ node_modules
 
 src/assets/*
 !src/assets/spritesheets
+!src/assets/sound
+dist

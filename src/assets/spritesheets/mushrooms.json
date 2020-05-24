@@ -1,0 +1,137 @@
+{
+	"meta": {
+		"image": "mushrooms.png",
+		"size": {"w":3274,"h":3255},
+		"scale": "1"
+	},
+	"frames": {
+		"grzyb_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":862,"h":1500},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":862,"h":1500},
+			"sourceSize": {"w":862,"h":1500}
+		},
+		"grzyb_17.png":
+		{
+			"frame": {"x":862,"y":0,"w":786,"h":1449},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":10,"y":29,"w":786,"h":1449},
+			"sourceSize": {"w":822,"h":1500}
+		},
+		"grzyb_15.png":
+		{
+			"frame": {"x":1648,"y":0,"w":856,"h":1442},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":45,"y":17,"w":856,"h":1442},
+			"sourceSize": {"w":980,"h":1500}
+		},
+		"grzyb_14.png":
+		{
+			"frame": {"x":2504,"y":0,"w":770,"h":1067},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":9,"y":39,"w":770,"h":1067},
+			"sourceSize": {"w":805,"h":1123}
+		},
+		"grzyb_13.png":
+		{
+			"frame": {"x":0,"y":1500,"w":625,"h":1027},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":66,"y":18,"w":625,"h":1027},
+			"sourceSize": {"w":705,"h":1083}
+		},
+		"grzyb_1.png":
+		{
+			"frame": {"x":625,"y":1500,"w":717,"h":998},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":717,"h":998},
+			"sourceSize": {"w":717,"h":998}
+		},
+		"grzyb_2.png":
+		{
+			"frame": {"x":1342,"y":1500,"w":312,"h":859},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":312,"h":859},
+			"sourceSize": {"w":312,"h":859}
+		},
+		"grzyb_11.png":
+		{
+			"frame": {"x":1654,"y":1500,"w":715,"h":767},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":47,"y":21,"w":715,"h":767},
+			"sourceSize": {"w":783,"h":822}
+		},
+		"grzyb_16.png":
+		{
+			"frame": {"x":2369,"y":1500,"w":642,"h":740},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":22,"y":35,"w":642,"h":740},
+			"sourceSize": {"w":686,"h":808}
+		},
+		"grzyb_10.png":
+		{
+			"frame": {"x":0,"y":2527,"w":553,"h":728},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":5,"y":5,"w":553,"h":728},
+			"sourceSize": {"w":570,"h":733}
+		},
+		"grzyb_7.png":
+		{
+			"frame": {"x":2504,"y":1067,"w":220,"h":273},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":273},
+			"sourceSize": {"w":220,"h":273}
+		},
+		"grzyb_8.png":
+		{
+			"frame": {"x":2724,"y":1067,"w":262,"h":167},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":262,"h":167},
+			"sourceSize": {"w":262,"h":167}
+		},
+		"grzyb_5.png":
+		{
+			"frame": {"x":3011,"y":1500,"w":132,"h":200},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":200},
+			"sourceSize": {"w":132,"h":200}
+		},
+		"grzyb_3.png":
+		{
+			"frame": {"x":3143,"y":1500,"w":63,"h":199},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":199},
+			"sourceSize": {"w":63,"h":199}
+		},
+		"grzyb_6.png":
+		{
+			"frame": {"x":2986,"y":1067,"w":131,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":131,"h":146},
+			"sourceSize": {"w":131,"h":146}
+		},
+		"grzyb_4.png":
+		{
+			"frame": {"x":3117,"y":1067,"w":107,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":122},
+			"sourceSize": {"w":107,"h":122}
+		}
+	}
+}

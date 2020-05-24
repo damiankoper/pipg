@@ -5,10 +5,10 @@ import MainScene from "./scene/MainScene";
 
 export default class Game {
   private app = new PIXI.Application();
-  private engine = Engine.create();
+  private engine = Engine.create({ enableSleeping: true });
 
   private camera = new Camera();
-  private mainScene: MainScene = new MainScene(this.app,this.camera);
+  private mainScene: MainScene = new MainScene(this.app, this.camera);
 
   constructor() {
     document.body.appendChild(this.app.view);
@@ -39,8 +39,9 @@ export default class Game {
   }
 
   loop(delta: number) {
-    Engine.update(this.engine, (1000 / 60) * delta);
-    this.mainScene.update();
+    const ms = (1000 / 60) * delta
+    Engine.update(this.engine, ms);
+    this.mainScene.update(ms);
     this.camera.update(delta);
   }
 }

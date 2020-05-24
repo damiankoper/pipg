@@ -1,0 +1,7 @@
+node_modules
+src/assets/*
+!src/assets/spritesheets
+!src/assets/sound
+.vscode
+docs
+dist
