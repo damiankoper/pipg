@@ -5,3 +5,4 @@ src/assets/*
 .vscode
 docs
 dist
+Dockerfile
