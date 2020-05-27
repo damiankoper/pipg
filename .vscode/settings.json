@@ -7,5 +7,6 @@
         "markdown",
         "latex",
         "plaintext"
-    ]
+    ],
+    "editor.wordWrap": "wordWrapColumn"
 }

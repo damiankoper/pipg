@@ -209,7 +209,7 @@ export default class MainScene extends Scene {
     middlegroundObjects.push(ground2);
 
     const x = -1700;
-    const sokrates = new Sokrates(new PIXI.Point(x, 350), 0.1);
+    const sokrates = new Sokrates(new PIXI.Point(-1700, 350), 0.1);
     const title = new Title(new PIXI.Point(-140, 210), 0.6);
     title.sokrates = sokrates;
 

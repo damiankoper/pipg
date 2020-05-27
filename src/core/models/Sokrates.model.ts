@@ -4,8 +4,6 @@ import AnimatedSprite from "./base/AnimatedSprite";
 
 enum CharacterState {
   Idle,
-  WalkingLeft,
-  WalkingRight,
   MovingLeft,
   MovingRight,
 }
