@@ -124,7 +124,7 @@ middleground.filters = [new PIXI.filters.BlurFilter(5), middleMatrixFilter];
 Bryły sztywne domyślnie są prostokątami utworzonymi domyślnie na podstawie rozmiaru tekstury. Aby kolizje były wiarygodnie odzwierciedlone zainstaniała konieczność ręcznego zdefiniowania punktów wielokątu tworzących bryłę sztywną dla kamieni:
 
 ![](2020-05-27-23-43-29.png)
-
+![](2020-05-27-23-45-27.png)
 ## Deszcz i pył
 
 Efekt cząsteczek został osiągnięty z wykorzystaniem pluginu [pixi-particles](https://pixijs.io/pixi-particles/docs/). Wykorzystuje on tesktury do generowanie cząsteczek w określonym obszarze.
